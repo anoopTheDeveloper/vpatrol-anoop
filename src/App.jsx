@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Myform from "./components/Myform";
+import Myform from "./assets/components/Myform"
 import axios from "axios";
 
 function App() {
@@ -19,12 +19,12 @@ function App() {
       <div className="conatiner">
         <Myform />
         <div>
-          <h2>Total User: {data.length}</h2>
+          <h2 className="total">Total User: {data.length}</h2>
           <div className="box">
             {data.slice(0).reverse().map((userDetails, index) => (
               <div className="box-inside" key={index}>
                 <div>
-                  <h2>user details</h2>
+                  <h2 >user details</h2>
                   <p>
                     <strong>user_id </strong>: {userDetails.user_id}
                   </p>
