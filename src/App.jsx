@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Myform from "./assets/components/Myform"
+import Myform from "./components/Myform"
 import axios from "axios";
 
 function App() {
